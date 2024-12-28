@@ -12,7 +12,6 @@ from fastapi_users import (
 )
 from sqlalchemy.exc import IntegrityError
 
-
 from src.models import User
 from src.repositories.users import UsersRepository
 from src.services.validators import PasswordValidator

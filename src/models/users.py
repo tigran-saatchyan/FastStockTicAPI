@@ -1,7 +1,9 @@
+"""User model."""
+
 import datetime
 
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
-from sqlalchemy import String, func, TIMESTAMP
+from sqlalchemy import TIMESTAMP, String, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from src.models.base_model import BaseModel

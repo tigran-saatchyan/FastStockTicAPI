@@ -1,6 +1,8 @@
+"""Base repository module."""
+
 from abc import ABC, abstractmethod
 
-from sqlalchemy import insert, select, and_, update, delete
+from sqlalchemy import and_, delete, insert, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.models.users import User

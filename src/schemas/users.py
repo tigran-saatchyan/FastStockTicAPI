@@ -1,3 +1,5 @@
+"""Pydantic models for the user schema."""
+
 from datetime import datetime
 from typing import Optional
 

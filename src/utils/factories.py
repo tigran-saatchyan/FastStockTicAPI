@@ -1,3 +1,7 @@
+"""Factories for creating FastAPI application instances and setting
+up middleware and routes.
+"""
+
 from typing import Dict
 
 from fastapi import FastAPI
@@ -16,8 +20,10 @@ def create_app() -> FastAPI:
     """
     return FastAPI(**settings.FASTAPI_SETTINGS)
 
+
 def setup_cors_middleware(application: FastAPI) -> None:
-    """Set up Cross-Origin Resource Sharing (CORS) middleware for the FastAPI application.
+    """Set up Cross-Origin Resource Sharing (CORS) middleware
+    for the FastAPI application.
 
     Args:
         application (FastAPI): The FastAPI application instance.
@@ -81,4 +87,3 @@ def setup_routes(application: FastAPI) -> None:
 
     for router in all_routers:
         application.include_router(router)
-

@@ -1,7 +1,7 @@
 """Added user model
 
 Revision ID: 4fdba2230b64
-Revises: 
+Revises:
 Create Date: 2024-12-28 20:53:53.832217
 
 """

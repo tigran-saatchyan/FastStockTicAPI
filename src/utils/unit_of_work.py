@@ -1,4 +1,6 @@
-from abc import abstractmethod, ABC
+"""Unit of Work pattern implementation."""
+
+from abc import ABC, abstractmethod
 from typing import Type
 
 from src.db import async_session_maker

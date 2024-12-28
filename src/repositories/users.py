@@ -1,3 +1,5 @@
+"""Repository for interacting with the User model in the database."""
+
 from src.models import User
 from src.repositories.base_repository import BaseRepository
 

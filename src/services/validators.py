@@ -1,3 +1,5 @@
+"""This module contains validators for checking the validity of data."""
+
 import re
 
 from fastapi import HTTPException
@@ -17,7 +19,6 @@ class PasswordValidator:
 
     def __call__(self, password: str, confirm_password: str):
         if not re.search(r"^(?=.*[A-Z])(?=.*[$%&!]).{8,}$", password):
-
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="The password is not valid",

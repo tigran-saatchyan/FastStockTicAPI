@@ -4,8 +4,9 @@ import uvicorn
 
 from src.utils.factories import (
     create_app,
+    custom_openapi,
     setup_cors_middleware,
-    custom_openapi, setup_routes,
+    setup_routes,
 )
 
 app = create_app()

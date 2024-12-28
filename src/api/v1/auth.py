@@ -1,8 +1,10 @@
+"""Authentication routes for the FastAPI application."""
+
 from fastapi import FastAPI
 from fastapi_users import FastAPIUsers
 
 from src.models import User
-from src.schemas.users import UserRead, UserCreate, UserUpdate
+from src.schemas.users import UserCreate, UserRead, UserUpdate
 from src.services.managers import get_user_manager
 from src.settings.auth import auth_backend
 
